@@ -4,6 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/login_botao_logar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Logar"
+        app:layout_constraintEnd_toEndOf="@id/login_senha"
+        app:layout_constraintStart_toStartOf="@id/login_senha"
+        app:layout_constraintTop_toBottomOf="@id/login_senha" />
+
+    <Button
+        android:id="@+id/login_botao_cadastrar_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cadastrar usuário"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@id/login_botao_logar"
+        app:layout_constraintStart_toStartOf="@id/login_botao_logar"
+        app:layout_constraintTop_toBottomOf="@id/login_botao_logar" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_usuario_id"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -44,15 +65,5 @@
             android:inputType="number"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/login_botao_logar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Logar"
-        app:layout_constraintEnd_toEndOf="@id/login_senha"
-        app:layout_constraintStart_toStartOf="@id/login_senha"
-        app:layout_constraintTop_toBottomOf="@id/login_senha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
